@@ -1,0 +1,39 @@
+body{ 
+    background-image: url('img/Julietas.jpeg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    font-family: "Sofia", sans-serif;
+    text-align: center; 
+    font-size: 30px ;
+}
+
+
+  textarea{
+    width: 300px;
+    height: 150px;
+    font-size: 20px;
+    border-radius: 15px;
+    text-transform: uppercase;
+
+  }
+
+  input[type=button]{
+    display: block;
+    background-color: #e619a9;
+    height: 35px;
+    border-width:1px;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 15px;
+}
+
+.box{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

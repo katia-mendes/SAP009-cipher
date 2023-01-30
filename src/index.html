@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang= "pt-br" ></html>
   <head>
+
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cipher </title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <audio autoplay="autoplay" controls="controls">
+      <source src="music/BeethovenFurElise.mp3" type="audio/mp3" />
+      </audio>
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Criptografia para as Julietes</h1>
     </div>
-    <script src="index.js" type="module"></script>
+    <p>Se Romeu e Julieta soubessem usar a Criptografia, será que o final desse amor seria diferente? </p>
+      <p>Se você precisa de ajuda para declarar o seu amor :
+        Por favor, insira a sua mensagem: </p>
+  
+    <textarea name="mensagem" id="mensagem" placeholder="  Digite sua mensagem aqui" ></textarea>
+   <p>Digite um número para o deslocamento</p>
+    <input id="deslocamento" type="number" class="desloc">
+  
+
+    <button type="submit" onclick="criptografia('cifrar');">Criptografar</button>
+    <button type="submit" onclick="criptografia('decifrar');">Descriptografar</button>
+
+    <p>Resultado</p>
+   <textarea id="resultado" type="text" class="resultado" readonly></textarea>
+    <script src="./index.js"></script>
   </body>
 </html>
