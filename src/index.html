@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang= "pt-br" ></html>
+<html lang="pt-br">
   <head>
-
     <meta charset="utf-8">
-    <title>Cipher </title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Cipher</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
     <audio autoplay="autoplay" controls="controls">
-      <source src="music/BeethovenFurElise.mp3" type="audio/mp3" />
-      </audio>
+      <source src="music/BeethovenFurElise.mp3" type="audio/mp3"/>
+    </audio>
   </head>
-  <body>
-    <div id="root">
-      <h1>Criptografia para as Julietes</h1>
-    </div>
-    <p>Se Romeu e Julieta soubessem usar a Criptografia, será que o final desse amor seria diferente? </p>
-      <p>Se você precisa de ajuda para declarar o seu amor :
-        Por favor, insira a sua mensagem: </p>
-  
-    <textarea name="mensagem" id="mensagem" placeholder="  Digite sua mensagem aqui" ></textarea>
-   <p>Digite um número para o deslocamento</p>
-    <input id="deslocamento" type="number" class="desloc">
-  
-
-    <button type="submit" onclick="criptografia('cifrar');">Criptografar</button>
-    <button type="submit" onclick="criptografia('decifrar');">Descriptografar</button>
-
-    <p>Resultado</p>
-   <textarea id="resultado" type="text" class="resultado" readonly></textarea>
-    <script src="./index.js"></script>
+    <body>
+      <div id="root">
+        <h1>Criptografia para as Julietes</h1>
+      </div>
+      <p>Se Romeu e Julieta soubessem usar a Criptografia, será que o final desse amor seria diferente? </p>
+      <p>Se você precisa de ajuda para declarar o seu amor, insira a sua mensagem abaixo : </p> 
+      <textarea name="mensagem" id="mensagem" class="text" placeholder="Digite sua mensagem aqui" required></textarea>
+      <p>Digite um número para o deslocamento :</p>
+      <input id="deslocamento" type="number" class="desloc" required>
+      <div>
+        <div>
+          <input id="criptografar" type="button" class="button" value="Criptografar">
+        </div>
+        <div> 
+          <input id="descriptografar" type="button" class="button" value="Descriptografar">
+        </div>
+      </div>
+      <p>Resultado</p>
+      <textarea id="resultado" type="text" class="text" readonly></textarea>
+      <div>
+        <input id="limpar" type="button" class="box" value="Limpar">
+      </div>
+      <script type="module" src="index.js"></script>
   </body>
 </html>
