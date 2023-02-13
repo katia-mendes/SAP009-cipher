@@ -1,12 +1,12 @@
 const cipher = {
   encode(deslocamento, mensagem) { 
-    const fraseFinal = [];
     let charDesloc = '';
     let charCipher = '';
+    const fraseFinal = [];
 
     for(const letra in mensagem) {
       let char = mensagem.charCodeAt(letra);
-      char = parseInt(char);
+      char = parseInt(char); 
       while (deslocamento < 0) {
         deslocamento = deslocamento + 26; 
       }
