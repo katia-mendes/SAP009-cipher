@@ -1,7 +1,7 @@
 # Cifra de César
 
 [Acesso a aplicação:](https://katia-mendes.github.io/SAP009-cipher/)
-![Screen Aplicação](src/img/Julietas.jpeg)
+![Screen Aplicação](src/imgJu.png)
 ## Índice/ Criptografia para as Julietes
 
 * [1. Apresentação](#1-Apresentação)
